@@ -1,0 +1,32 @@
+{
+	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+	"name": "Síntesis",
+	"patterns": [
+		{
+			"include": "#keywords"
+		},
+		{
+			"include": "#strings"
+		}
+	],
+	"repository": {
+		"keywords": {
+			"patterns": [{
+				"name": "keyword.control.sin",
+				"match": "\\b(if|while|for|return|para|cada|devuelve|retornar?)\\b"
+			}]
+		},
+		"strings": {
+			"name": "string.quoted.double.sin",
+			"begin": "\"",
+			"end": "\"",
+			"patterns": [
+				{
+					"name": "constant.character.escape.sin",
+					"match": "\\\\."
+				}
+			]
+		}
+	},
+	"scopeName": "source.sin"
+}

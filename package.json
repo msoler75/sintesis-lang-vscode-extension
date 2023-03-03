@@ -1,0 +1,25 @@
+{
+  "name": "sintesis-lang",
+  "displayName": "Sintesis Lang",
+  "description": "Sintesis Language",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.76.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [{
+      "id": "sin",
+      "aliases": ["Síntesis", "sin"],
+      "extensions": [".s",".sin"],
+      "configuration": "./language-configuration.json"
+    }],
+    "grammars": [{
+      "language": "sin",
+      "scopeName": "grammar.x",
+      "path": "./syntaxes/sin.tmLanguage.json"
+    }]
+  }
+}
